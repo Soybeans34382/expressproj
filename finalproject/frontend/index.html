@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="auth-card">
+      <h1>Admin Login</h1>
+
+      <form id="loginForm" class="auth-form">
+        <div>
+          <label for="identifier">Email or Username</label>
+          <input type="text" id="identifier" required>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+
+      <p id="errorMsg" class="msg error"></p>
+      <p class="auth-help">Don't have an account? <a href="register.html">Register here</a></p>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
